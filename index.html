@@ -7,35 +7,38 @@
                 align-items: center;
                 height: 100vh;
                 background-color: #191919;
+                margin: 0;
+                font-family: Arial, sans-serif;
             }
             a {
                 text-decoration: none;
             }
             .box{
-                font-size: 20px;
+                font-size: 4vw;
                 color: white;
-                height: 250px;
-                width: 350px;
+                max-width: 90%;
+                text-align: center;
+                padding: 20px;
                 border-radius: 10px;
                 background: #191919;
                 flex-direction: column;
                 display: flex;
                 align-items: center;
-                justify-content: center;
                 }
                 .buttons-container {
                 display: flex; 
                 justify-content: space-around;
-                height: 50px; 
-                width: 150px;
+                margin-top: 20px; 
+                width: 100%;
                 }
                 button {
-                height: 30px; 
-                width: 50px;
+                height: 10vw; 
+                width: 30vw;
                 background: white; 
                 border-radius: 5px;
                 color: blue;
                 font-weight: 600;
+                font-size: 3vw;
                 }
         </style>
     </head>
@@ -58,7 +61,7 @@
     button.addEventListener ('mouseover', function () {
     button.style.position = "absolute";
     button.style.top = Math. random() * height + "px";
-    button.syle.left = Math. random() * width + "px";
+    button.style.left = Math. random() * width + "px";
     })
     </script>
 </html>
